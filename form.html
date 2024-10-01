@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Real-Time Form Validation with Proxy</title>
+        <link rel="stylesheet" href="form.css" />
+    </head>
+    <body>
+        <form action="post" id="registrationForm">
+            <div>
+                <label for="id">
+                    <span class="label-name">id</span>
+                    <input type="text" autocomplete="off" name="id" required id="idInput" />
+                    <p class="warning" style="display: none" id="idError">안내말</p>
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    <span class="label-name">email</span>
+                    <input type="text" autocomplete="off" name="email" required id="emailInput" />
+                    <p class="warning" style="display: none" id="emailError">안내말</p>
+                </label>
+            </div>
+            <div>
+                <label for="password">
+                    <span class="label-name">pw</span>
+                    <input type="text" autocomplete="off" name="pw" required id="pwInput" />
+                    <p class="warning" style="display: none" id="pwError">안내말</p>
+                </label>
+            </div>
+            <div>
+                <label for="repassword">
+                    <span class="label-name">pw check</span>
+                    <input type="text" autocomplete="off" name="repw" required id="repwInput" />
+                    <p class="warning" style="display: none" id="repwError">안내말</p>
+                </label>
+            </div>
+            <button type="submit">submit</button>
+        </form>
+        <script src="./form.js"></script>
+    </body>
+</html>
